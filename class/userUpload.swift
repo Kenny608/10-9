@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct userUpload: View {
+    let items = 1...8
+    
+    let rows = [
+        GridItem()
+    ]
+    
     var body: some View {
-        Text("User Upload")
+//        Button{
+//            
+//        }
+        ScrollView(.horizontal) {
+            LazyHGrid(rows: rows, alignment: .center) {
+                ForEach(items, id: \.self) { item in
+                  Label("Item \(item)", systemImage: "\(item).circle.fill") // I need to fix this
+                }
+            }
+            .frame(height: 150)
+        }
     }
 }
 

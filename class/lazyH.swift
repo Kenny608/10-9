@@ -11,12 +11,12 @@ struct lazyH: View {
     let data = (1...8).map { "Item \($0)" }
     
     let columns = [
-        GridItem()
+        GridItem(.flexible(minimum: 40, maximum: 80))
     ]
     
     var body: some View {
 //        ScrollView {
-            LazyVGrid(columns: columns, spacing: 20) {
+            LazyVGrid(columns: columns) {
                 ForEach(data, id: \.self) { item in
                     Label(item , systemImage: "square")
                 }

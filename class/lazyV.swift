@@ -18,7 +18,7 @@ struct lazyV: View {
         ScrollView(.horizontal) {
             LazyHGrid(rows: rows, alignment: .center) {
                 ForEach(items, id: \.self) { item in
-                    Label("Item \(item)", systemName: "\(item).circle.fill") // I need to fix this
+                    Label("Item \(item)", systemImage: "\(item).circle.fill") // I need to fix this
                 }
             }
             .frame(height: 150)
