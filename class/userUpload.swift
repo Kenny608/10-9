@@ -15,10 +15,17 @@ struct userUpload: View {
     ]
     
     var body: some View {
-//        Button{
-//            
-//        }
         ScrollView(.horizontal) {
+        Button{
+            
+        }label: {
+            Label("Just Vibing", image: )
+                .font(.largeTitle)
+                .foregroundColor(.purple)
+                .padding()
+                .border(Color.yellow, width: 8)
+        }
+        
             LazyHGrid(rows: rows, alignment: .center) {
                 ForEach(items, id: \.self) { item in
                   Label("Item \(item)", systemImage: "\(item).circle.fill") // I need to fix this
