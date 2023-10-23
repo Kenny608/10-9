@@ -5,6 +5,8 @@
 //  Created by Kenny Luchau on 10/9/23.
 //
 
+// Unsure how to implement I will come back to this
+
 import SwiftUI
 
 struct userUpload: View {
@@ -19,11 +21,11 @@ struct userUpload: View {
         Button{
             
         }label: {
-            Label("Just Vibing", image: )
-                .font(.largeTitle)
-                .foregroundColor(.purple)
-                .padding()
-                .border(Color.yellow, width: 8)
+//            Label("Just Vibing", image: )
+//                .font(.largeTitle)
+//                .foregroundColor(.purple)
+//                .padding()
+//                .border(Color.yellow, width: 8)
         }
         
             LazyHGrid(rows: rows, alignment: .center) {
